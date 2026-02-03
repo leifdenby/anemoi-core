@@ -1,0 +1,32 @@
+[project]
+name = "anemoi-core"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "graphs",
+    "models",
+    "training",
+]
+
+[tool.uv.sources]
+anemoi-graphs = { workspace = true }
+anemoi-models = { workspace = true }
+anemoi-training = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "anemoi-graphs",
+    "anemoi-models",
+    "anemoi-training",
+]
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'linux' and platform_machine == 'aarch64'",
+]
+
