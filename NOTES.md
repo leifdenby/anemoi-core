@@ -179,3 +179,9 @@ Foot guns:
 Outstanding issues:
 
 - setting `dataloader.[training,validation,test].frequency` causes an issue when opening the dataset saying that the validation dataset only has one timestep (1990-09-30), but that isn't right. Without this training runs, but that doesn't make sense ERA5 is at 6hr resolution and DANRA is at 3hr.
+
+Start training using:
+
+```bash
+$> ANEMOI_BASE_SEED=42 uv run anemoi-training train --config-name lam
+```
