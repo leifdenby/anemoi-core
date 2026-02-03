@@ -174,3 +174,8 @@ Computing size of /home/lcd/anemoi-datasets/era5-o96-1990-09-6h-subset-v1.zarr: 
 Foot guns:
 
 - Paths to datasets can't start with `~`, have to be full paths. The exception message given is `Attribute` error when trying to access `self.z.data` in `anemoi.datasets.data.stores`.
+
+
+Outstanding issues:
+
+- setting `dataloader.[training,validation,test].frequency` causes an issue when opening the dataset saying that the validation dataset only has one timestep (1990-09-30), but that isn't right. Without this training runs, but that doesn't make sense ERA5 is at 6hr resolution and DANRA is at 3hr.
