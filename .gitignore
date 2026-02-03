@@ -145,3 +145,4 @@ Untitled-*.py
 uv.lock
 .python-version
 outputs/
+training-outputs-*/

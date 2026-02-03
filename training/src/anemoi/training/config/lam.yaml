@@ -22,6 +22,7 @@ dataloader:
   dataset:
     cutout:
       - dataset: ${hardware.paths.data}/${hardware.files.dataset}
+        thinning: 5
       - dataset: ${hardware.paths.data}/${hardware.files.forcing_dataset}
     adjust: all
     min_distance_km: 0
@@ -40,4 +41,4 @@ hardware:
     forcing_dataset: era5-o96-1990-09-6h-subset-v1.zarr/
   paths:
     data: /home/lcd/anemoi-datasets
-    output: ./model-outputs
+    output: ./training-outputs-

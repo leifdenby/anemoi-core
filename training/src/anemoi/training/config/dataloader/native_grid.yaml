@@ -56,7 +56,7 @@ training:
   dataset: ${dataloader.dataset}
   start: null
   end: 2019-09-14
-  frequency: ${data.frequency}
+  # frequency: ${data.frequency}
   drop:  []
 
 validation_rollout: 1 # number of rollouts to use for validation, must be equal or greater than rollout expected by callbacks
@@ -65,12 +65,12 @@ validation:
   dataset: ${dataloader.dataset}
   start: 2019-09-15
   end: 2019-09-22
-  frequency: ${data.frequency}
+  # frequency: ${data.frequency}
   drop:  []
 
 test:
   dataset: ${dataloader.dataset}
   start: 2019-09-23
   end: null
-  frequency: ${data.frequency}
+  # frequency: ${data.frequency}
   drop:  []
