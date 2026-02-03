@@ -55,7 +55,7 @@ dataset: ${hardware.paths.data}/${hardware.files.dataset}
 training:
   dataset: ${dataloader.dataset}
   start: null
-  end: 2020
+  end: 2019-09-14
   frequency: ${data.frequency}
   drop:  []
 
@@ -63,14 +63,14 @@ validation_rollout: 1 # number of rollouts to use for validation, must be equal
 
 validation:
   dataset: ${dataloader.dataset}
-  start: 2021
-  end: 2021
+  start: 2019-09-15
+  end: 2019-09-22
   frequency: ${data.frequency}
   drop:  []
 
 test:
   dataset: ${dataloader.dataset}
-  start: 2022
+  start: 2019-09-23
   end: null
   frequency: ${data.frequency}
   drop:  []

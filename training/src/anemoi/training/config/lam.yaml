@@ -22,7 +22,6 @@ dataloader:
   dataset:
     cutout:
       - dataset: ${hardware.paths.data}/${hardware.files.dataset}
-        thinning: ???
       - dataset: ${hardware.paths.data}/${hardware.files.forcing_dataset}
     adjust: all
     min_distance_km: 0
@@ -37,5 +36,8 @@ model:
     attribute_name: cutout_mask
 hardware:
   files:
-    dataset: ???
-    forcing_dataset: ???
+    dataset: dmi-danra-deode-6hraccum-harmonie-2p5km-1990-09-3h-v1.zarr/
+    forcing_dataset: era5-o96-1990-09-6h-subset-v1.zarr/
+  paths:
+    data: /home/lcd/anemoi-datasets
+    output: ./model-outputs

@@ -3,8 +3,10 @@ name = "anemoi-core"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "trimesh>=4.11.1",
+]
 
 [tool.uv.workspace]
 members = [
@@ -23,6 +25,7 @@ dev = [
     "anemoi-graphs",
     "anemoi-models",
     "anemoi-training",
+    "ipdb>=0.13.13",
 ]
 
 [tool.uv]

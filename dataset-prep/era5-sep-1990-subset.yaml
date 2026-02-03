@@ -1,0 +1,19 @@
+name: era5-o96-1990-09-6h-subset-v1
+description: ERA5 O96 dataset for September 1990 only
+attribution: ECMWF/C3S  
+licence: CC-BY-4.0  
+  
+dates:  
+  start: "1990-09-01T00:00:00"  
+  end: "1990-09-30T18:00:00"  
+  frequency: 6h  
+  
+input:  
+  anemoi-dataset:  
+    dataset: "https://data.ecmwf.int/anemoi-datasets/era5-o96-1979-2023-6h-v8.zarr"  
+    params: ["2t", "msl", "sp", "10u", "10v", "lsm", "tp", "cp"]
+  
+statistics:  
+  end: 1990  
+  
+checks: []
